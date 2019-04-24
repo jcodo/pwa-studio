@@ -1,5 +1,4 @@
 image:
   file: Dockerfile.dev
 tasks:
-  - before: cp docker/.env.docker.dev packages/venia-concept/.env
-    init: docker/run-docker
+  - init: docker/run-docker -e docker/env.docker.dev
