@@ -1,4 +1,5 @@
 image:
   file: Dockerfile.dev
 tasks:
-  - init: docker/run-docker
+  - before: cp docker/.env.docker.dev docker/.env
+    init: docker/run-docker
