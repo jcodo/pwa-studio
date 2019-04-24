@@ -1,4 +1,4 @@
 image:
-  file: Dockerfile
+  file: Dockerfile.dev
 tasks:
   - init: docker/run-docker
